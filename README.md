@@ -56,6 +56,7 @@ Customized
   flip={false}
   clickable={true}
   onFlipEnd={(isFlipEnd)=>{console.log('isFlipEnd', isFlipEnd)}}
+  //other custom props include: customAnimation, contentSwitchTime, flipInputRange, flipOutputRange
 >
   {/* Face Side */}
   <View style={styles.face}>
@@ -134,6 +135,14 @@ Customize the animation applied on the rotation angle. This function takes two a
 contentSwitchTime(number) `Default:120`
 ---
 If you use a custom animation, the content fliping time should be adjusted due to custom animation time or the custom animation curve, which may not be symetrical. Default 120 was kept in case you use the default spring animation.
+
+flipInputRange(arrayOf(number))
+---
+Give a custom input, usefull if you want to split the input in intervals, like jumping some angles
+
+flipOutputRange(arrayOf(number))
+---
+Give a custom output, usefull if you want to fplit the card to a certain angle or split the ouput in intervals, like jumping some angles
 
 
 Credits
