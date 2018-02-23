@@ -131,6 +131,11 @@ Customize the animation applied on the rotation angle. This function takes two a
 
 **Example:** for a 200ms linear animation, `customAnimation={(value, toValue) => Animated.timing(value, { toValue, duration: 200, useNativeDriver: true })}`
 
+contentSwitchTime(number) `Default:120`
+---
+If you use a custom animation, the content fliping time should be adjusted due to custom animation time or the custom animation curve, which may not be symetrical. Default 120 was kept in case you use the default spring animation.
+
+
 Credits
 ===
 Inspired by [react-flipcard](https://github.com/mzabriskie/react-flipcard)
